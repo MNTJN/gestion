@@ -1,0 +1,12 @@
+<div>
+	<h2>Ajout d'une Catégorie</h2>
+	<form (ngSubmit)="onSubmit(newCategorieForm)" #newCategorieForm="ngForm">
+		<div class="form-input">
+			<label for="libelle">Libellé :</label>
+			<input id="libelle" name="libelle" type="text" ngModel required>
+		</div>
+		<button type="submit" 
+				class="btn btn-success"
+				[disabled]="newCategorieForm.invalid">Ajouter</button>
+	</form>
+</div>

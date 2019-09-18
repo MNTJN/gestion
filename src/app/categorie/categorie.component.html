@@ -1,0 +1,17 @@
+<section>
+	<h2>Liste des catégories</h2>
+	<nav>
+		<ul>
+			<li><a routerLink="/new-categorie" class="btn btn-success">Ajouter {{ componentName }}</a></li>
+		</ul>
+	</nav>
+	<ul class="entities-list">
+		<li *ngFor='let categorie of categories'>
+			<ul>
+				<li>Id : {{ categorie.id }}</li>
+				<li>Libellé : {{ categorie.libelle }}</li>
+				<li><a href="#" class="btn btn-mid">Modifier</a><a href="#" class="btn btn-danger">Supprimer</a></li>
+			</ul>
+		</li>
+	</ul>
+</section>

@@ -1,0 +1,22 @@
+<div>
+	<h2>Ajout d'un Article</h2>
+	<form (ngSubmit)="onSubmit(newArticleForm)" #newArticleForm="ngForm" >
+		<div class="form-input">
+			<label for="libelle">Libellé :</label>
+			<input id="libelle" name="libelle" type="text" ngModel required>
+		</div>
+		<div class="form-input">
+			<label for="categorie">Catégorie :</label>
+			<select id="categorie" name="categorie" ngModel>
+				<option *ngFor="let categorie of categories" value="{{categorie.libelle}}">{{categorie.libelle}}</option>
+			</select>
+		</div>
+		<div class="form-input">
+			<label for="prix">Prix :</label>
+			<input id="prix" name="prix" type="text" ngModel>
+		</div>
+		<button type="submit"
+				class="btn btn-success"
+				[disabled]="newArticleForm.invalid">Ajouter</button>
+	</form>
+</div>

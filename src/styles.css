@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.45rem;
+}
+
+body{
+	font-family: 'Manjari', sans-serif;
+	padding: 15px;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, button:hover{
+	font-weight: bold;
+}
+
+.active-link{
+	background-color: #000;
+	border-radius: 6px;
+}
+
+.active-link a{
+	color: #fff;
+}
+
+.btn{
+	color: #fff;
+	border: none;
+	margin: 10px;
+	padding: 10px;
+}
+
+.btn-success{
+	background-color: lightgreen;
+}
+
+.btn-mid{
+	background-color: orange;
+}
+
+.btn-danger{
+	background-color: red;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+	padding: 10px;
+}
+
+h1, h2, h3, h4{
+	text-align: center;
+}
+
+label{
+	width: 150px;
+	display: inline-block;
+}
+
+input, select{
+	border: none;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+form{
+	padding: 15px;
+	margin: 10px;
+	background-color: lightblue;
+}
+
+/* HEADER */
+
+header nav{
+	margin: 15px;
+}
+
+header nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* MAIN */
+
+.entities-list li{
+	background-color: lightgrey;
+	margin: 10px;
+}
+
+.form-input{
+	margin: 10px;
+}
+
+@media screen and (max-width: 767px){
+	header nav ul{
+		display: initial;
+	}
+
+	label{
+		display: inline;
+		width: auto;
+		margin-right: 15px;
+	}
+}
